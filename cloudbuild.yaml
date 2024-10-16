@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/google-cloud-cli:latest'
+  args: [ 'gcloud', 'artifacts', 'versions', 'list', '--package=io.osnz.demos:gcp-artifact-mvn-demo', '--repository=test' ,'--project=kefeng-gke-lab', '--location=australia-southeast1', '--format=value(VERSION)' ]
+
+# You can organize your builds with tags
+tags: ['gcp-cloud-build-demo']
